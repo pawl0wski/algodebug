@@ -8,7 +8,7 @@
 
                 <AlgoButton @click="openLoadProjectModal()"> <i class="fa fa-search"></i> Otwórz projekt </AlgoButton>
 
-                <AlgoButton><i class="fa fa-user"></i> Zaloguj się</AlgoButton>
+                <AlgoButton @click="openLoginModal()"><i class="fa fa-user"></i> Zaloguj się</AlgoButton>
             </div>
         </div>
 
@@ -22,6 +22,7 @@ import LoadProjectModal from "@/components/modals/menu/LoadProjectModal.vue";
 import SaveProjectModal from "@/components/modals/menu/SaveProjectModal.vue";
 import { redirectTo } from "@/javascript/utils/other";
 import { openModal } from "jenesius-vue-modal";
+import LoginModal from "@/components/modals/menu/LoginModal";
 
 export default {
     components: { AlgoButton },
@@ -38,6 +39,10 @@ export default {
         openSaveProjectModal() {
             openModal(SaveProjectModal);
         },
+
+        openLoginModal() {
+            openModal(LoginModal);
+        }
     },
 };
 </script>
