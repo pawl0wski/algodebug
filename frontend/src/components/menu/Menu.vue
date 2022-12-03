@@ -7,6 +7,8 @@
                 <AlgoButton @click="openSaveProjectModal()"> <i class="fa fa-save"></i> Zapisz projekt </AlgoButton>
 
                 <AlgoButton @click="openLoadProjectModal()"> <i class="fa fa-search"></i> Otwórz projekt </AlgoButton>
+
+                <AlgoButton><i class="fa fa-user"></i> Zaloguj się</AlgoButton>
             </div>
         </div>
 
